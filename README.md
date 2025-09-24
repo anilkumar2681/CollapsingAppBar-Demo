@@ -24,9 +24,9 @@ Includes:
 - Easily customizable for any app
 
 ## Screenshots
-
-![Collapsed AppBar](screenshots/collapsed.png)
-![Expanded AppBar](screenshots/expanded.png)
+![Collapsing AppBar Demo](screenshots/demo.gif)
+![Collapsed AppBar](screenshots/collapsed.jpeg)
+![Expanded AppBar](screenshots/expanded.jpeg)
 
 ## Usage
 
