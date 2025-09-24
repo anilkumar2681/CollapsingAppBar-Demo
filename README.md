@@ -34,7 +34,7 @@ Includes:
 1. Clone this repo:
 
 ```bash
-git clone https://github.com/your-username/CollapsingAppBar.git
+git https://github.com/anilkumar2681/CollapsingAppBar-Demo.git
 ```
 2. Open in Android Studio.
 
