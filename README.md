@@ -26,8 +26,8 @@ Includes:
 ## Screenshots
 ![Loading_images](screenshots/loading.gif)
 ![Collapsing AppBar Demo](screenshots/demo.gif)
-![Collapsed AppBar](screenshots/collapsed.jpeg)
 ![Expanded AppBar](screenshots/expanded.jpeg)
+![Collapsed AppBar](screenshots/collapsed.jpeg)
 
 ## Usage
 
