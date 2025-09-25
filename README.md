@@ -1,5 +1,7 @@
 # CollapsingAppBar in Jetpack Compose
 
+![banner](screenshots/banner.png)
+
 A modern Jetpack Compose example demonstrating a **Collapsing AppBar** with smooth animations.
 Includes:
 
