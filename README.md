@@ -24,12 +24,9 @@ Includes:
 - Easily customizable for any app
 
 ## 📸 Screenshots
-| Loading State                   | Expanded State | Collapsed State |
-|---------------------------------|----------------|-----------------|
-| ![Loading_images](screenshots/loading.gif) | ![Expanded AppBar](screenshots/expanded.jpeg) | ![Collapsed AppBar](screenshots/collapsed.jpeg) |
-![Collapsing AppBar Demo](screenshots/demo.gif)
-
-
+| Loading State                   | Expanded State | Collapsed State | Expanded and Collapsed
+|---------------------------------|----------------|-----------------|----------------------|
+| ![Loading_images](screenshots/loading.gif) | ![Expanded AppBar](screenshots/expanded.jpeg) | ![Collapsed AppBar](screenshots/collapsed.jpeg) |![Collapsing AppBar Demo](screenshots/demo.gif) |
 
 ## Usage
 
@@ -43,4 +40,5 @@ git https://github.com/anilkumar2681/CollapsingAppBar-Demo.git
 3. Run on your device or emulator.
 
 ## WhatsApp Channel
-Get daily Kotlin and Jetpack Compose tips: [Join WhatsApp Channel] (https://whatsapp.com/channel/0029VbBGTNr90x2umLoWKU3z)
+Get Kotlin & Android Jetpack Compose tips on `What's App` **Join My Channel** :
+[📚 Kotlin & Android Learning📚](https://whatsapp.com/channel/0029VbBGTNr90x2umLoWKU3z)
