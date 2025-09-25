@@ -23,11 +23,13 @@ Includes:
 - Expand/collapse animation logic
 - Easily customizable for any app
 
-## Screenshots
-![Loading_images](screenshots/loading.gif)
+## 📸 Screenshots
+| Loading State                   | Expanded State | Collapsed State |
+|---------------------------------|----------------|-----------------|
+| ![Loading_images](screenshots/loading.gif) | ![Expanded AppBar](screenshots/expanded.jpeg) | ![Collapsed AppBar](screenshots/collapsed.jpeg) |
 ![Collapsing AppBar Demo](screenshots/demo.gif)
-![Expanded AppBar](screenshots/expanded.jpeg)
-![Collapsed AppBar](screenshots/collapsed.jpeg)
+
+
 
 ## Usage
 
