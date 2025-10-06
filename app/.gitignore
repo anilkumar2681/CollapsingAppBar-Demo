@@ -15,3 +15,6 @@ src/main/res/values/api_keys.xml
 # Local db / cache
 *.db
 *.iml
+
+# gradle properties file
+gradle.properties
