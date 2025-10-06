@@ -1,15 +1,30 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle
+.gradle/
+.kotlin/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration
 local.properties
+.idea/
+
+# OS files
+Thumbs.db
+
+# Keystore files (important for signing)
+*.jks
+*.keystore
+
+# Android Studio
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Logs
+*.log
+
+# Jetpack Compose Preview cache
+*.preview
+
+# gradle properties file
+gradle.properties
