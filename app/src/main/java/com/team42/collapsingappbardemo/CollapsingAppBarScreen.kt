@@ -1,5 +1,6 @@
 package com.team42.collapsingappbardemo
 
+import android.widget.Toast
 import androidx.compose.animation.core.LinearEasing
 import androidx.compose.animation.core.RepeatMode
 import androidx.compose.animation.core.animateFloat
@@ -23,11 +24,18 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.AccountCircle
+import androidx.compose.material.icons.filled.MoreVert
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.rememberTopAppBarState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -45,14 +53,13 @@ import androidx.compose.ui.graphics.nativeCanvas
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import coil.compose.AsyncImage
 import coil.compose.AsyncImagePainter
-import com.team42.collapsingappbardemo.custom.CollapsingAppBar
-import com.team42.collapsingappbardemo.custom.SetStatusBarWhiteIcons
-import com.team42.collapsingappbardemo.ui.theme.GrayBlack
+import com.team42.composecollapsingbar.CollapsingAppBar
 
 /**
  * Project: CollapsingAppBarDemo
@@ -63,7 +70,8 @@ import com.team42.collapsingappbardemo.ui.theme.GrayBlack
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CollapsingAppBarScreen(modifier: Modifier = Modifier) {
-    SetStatusBarWhiteIcons(GrayBlack)
+
+    val context = LocalContext.current
     val items = listOf(
         "https://anilkumar2681.github.io/sample-images/test/photos/1.jpg",
         "https://anilkumar2681.github.io/sample-images/test/photos/2.jpg",
@@ -93,7 +101,9 @@ fun CollapsingAppBarScreen(modifier: Modifier = Modifier) {
         "https://anilkumar2681.github.io/sample-images/test/photos/26.jpg",
     )
 
-    val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
+    val scrollBehavior =
+        TopAppBarDefaults.exitUntilCollapsedScrollBehavior(rememberTopAppBarState())
+
 
     Scaffold(
         modifier = modifier
@@ -107,8 +117,37 @@ fun CollapsingAppBarScreen(modifier: Modifier = Modifier) {
                 bioText = "Passionate about technology, design, and continuous learning. " +
                         "I love creating mobile apps, exploring new tools. When I’m not coding," +
                         "I enjoy reading, music, and discovering new ideas.",
-                expandedBackgroundColor = GrayBlack,
-                collapsedBackgroundColor = GrayBlack
+                showBackButton = false,
+                imageMinSize = 32.dp,
+                imageMaxSize = 60.dp,
+                tintColor = Color.White,
+                onBackClicked = {
+                    Toast.makeText(context, "Back button clicked!", Toast.LENGTH_SHORT).show()
+                },
+                profileImage = Icons.Default.AccountCircle,
+                actions = {
+                    IconButton(
+                        onClick =
+                            {
+                                Toast
+                                    .makeText(context, "Search clicked!", Toast.LENGTH_SHORT)
+                                    .show()
+                            }
+                    )
+                    {
+                        Icon(Icons.Default.Search, contentDescription = "Search")
+                    }
+                    IconButton(
+                        onClick =
+                            {
+                                Toast
+                                    .makeText(context, "More options clicked!", Toast.LENGTH_SHORT)
+                                    .show()
+                            })
+                    {
+                        Icon(Icons.Default.MoreVert, contentDescription = "More options")
+                    }
+                }
             )
         }
     ) { innerPadding ->
@@ -199,6 +238,14 @@ fun PhotoGridHeader(
                     .background(MaterialTheme.colorScheme.outlineVariant)
                     .padding(horizontal = 16.dp, vertical = 8.dp),
                 text = "Likes",
+                style = MaterialTheme.typography.bodyMedium
+            )
+            Text(
+                modifier = Modifier
+                    .clip(CircleShape)
+                    .background(MaterialTheme.colorScheme.outlineVariant)
+                    .padding(horizontal = 16.dp, vertical = 8.dp),
+                text = "Comments",
                 style = MaterialTheme.typography.bodyMedium
             )
         }
