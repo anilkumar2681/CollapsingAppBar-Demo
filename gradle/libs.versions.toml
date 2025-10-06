@@ -39,7 +39,7 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3",
 androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "runtime" }
 compose-material-icons-core = { group = "androidx.compose.material", name = "material-icons-core", version.ref = "material_icons" }
 compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "material_icons" }
-kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version = "kotlin_reflection" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin_reflection" }
 activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
 
 [plugins]
