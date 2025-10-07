@@ -32,8 +32,12 @@ Includes:
 
 **The CollapsingBar library is published on Maven Central.**
 
-![minSdkVersion](https://img.shields.io/badge/minSdk-24-blue)
+## Requirements
+
 ![collapsing bar](https://img.shields.io/maven-central/v/io.github.team2681/collapsingbar.svg)
+![Kotlin](https://img.shields.io/badge/Kotlin-2.2.20-blue)
+![AGP](https://img.shields.io/badge/AGP-8.3-orange)
+![Min SDK](https://img.shields.io/badge/Min%20SDK-24-brightgreen)
 
 **Using direct dependency version**
 
