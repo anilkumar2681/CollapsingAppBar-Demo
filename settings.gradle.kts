@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "CollapsingAppBarDemo"
 include(":app")
-include(":ComposeCollapsingBar")
+include(":collapsingbar")

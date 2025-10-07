@@ -28,3 +28,4 @@ captures/
 
 # gradle properties file
 gradle.properties
+/signing/

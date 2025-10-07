@@ -1,4 +1,4 @@
-package com.team42.composecollapsingbar
+package io.team2681.compose.collapsingbar
 
 import org.junit.Test
 

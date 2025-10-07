@@ -2,15 +2,18 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
-    `maven-publish`
+    id("com.vanniktech.maven.publish") version "0.34.0"
+    id("com.gradleup.nmcp") version "1.2.0" apply false
+    id("signing")
 }
 @Suppress("UnstableApiUsage")
 android {
-    namespace = "com.team42.composecollapsingbar"
+    namespace = "io.team2681.compose.collapsingbar"
     compileSdk = 36
 
     defaultConfig {
         minSdk = 24
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -42,17 +45,10 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.3"
     }
-
-    publishing {
-        singleVariant("release") {
-            withSourcesJar()
-            withJavadocJar()
-        }
-    }
 }
 
 dependencies {
-
+    implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -75,16 +71,19 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
 afterEvaluate {
     publishing {
         publications {
-            create<MavenPublication>("maven") {
-                groupId = "com.team42"
-                artifactId = "composecollapsingbar"
+            create<MavenPublication>("collapsingBar") {
+                from(components["release"])
+                groupId = "io.github.team2681"
+                artifactId = "collapsingBar"
                 version = "1.0.0"
 
-                afterEvaluate {
-                    from(components["release"])
+                signing {
+                    useGpgCmd()
+                    sign(publishing.publications["collapsingBar"])
                 }
             }
         }

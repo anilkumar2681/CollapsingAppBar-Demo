@@ -1,4 +1,4 @@
-package com.team42.composecollapsingbar
+package io.team2681.compose.collapsingbar
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.team42.composecollapsingbar.test", appContext.packageName)
+        assertEquals("io.team42.compose.collapsingbar.test", appContext.packageName)
     }
 }

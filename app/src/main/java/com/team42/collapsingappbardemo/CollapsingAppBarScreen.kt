@@ -59,7 +59,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import coil.compose.AsyncImage
 import coil.compose.AsyncImagePainter
-import com.team42.composecollapsingbar.CollapsingAppBar
+import io.team2681.compose.collapsingbar.CollapsingAppBar
 
 /**
  * Project: CollapsingAppBarDemo
