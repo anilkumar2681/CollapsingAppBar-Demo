@@ -141,23 +141,33 @@ Includes:
        }
 
    ```
+
 **Customize these parameters to fit your UI.**
 
-- ```scrollBehavior```→ that controls the collapsing and expanding animation. Connect it to a scrollable container such as `LazyColumn` or `LazyList`.
-- ```title``` → The main text or name displayed in the app bar. It scales and moves as the bar collapses.
+- ```scrollBehavior```→ that controls the collapsing and expanding animation. Connect it to a
+  scrollable container such as `LazyColumn` or `LazyList`.
+- ```title``` → The main text or name displayed in the app bar. It scales and moves as the bar
+  collapses.
 - ```subtitle``` → The text displayed below the title when expanded. It fades out when collapsed.
 - ```bioText```→ An optional bio or description shown only in the expanded state.
-- ```profileImageUrl``` → The image source for the avatar. Accepts: A [Painter] (e.g., from `painterResource`), A network image (from an image loading library) Or `null` to hide the image
+- ```profileImageUrl``` → The image source for the avatar. Accepts: A [Painter] (e.g., from
+  `painterResource`), A network image (from an image loading library) Or `null` to hide the image
 - ```imageMinSize```→ The minimum size (in dp) of the avatar when collapsed. Defaults to `32.dp`.
 - ```imageMaxSize```→ The maximum size (in dp) of the avatar when expanded. Defaults to `70.dp`.
-- ```shape```→ The shape of the avatar. Defaults to [CircleShape], but can be customized (e.g., `RoundedCornerShape(8.dp)` for a square look).
-- ```contentScale```→ Defines how the image should scale within its bounds. Common values are [ContentScale.Crop] or [ContentScale.Fit].
-- ```tintColor```→ An optional color tint applied to the avatar image. Pass `null` to disable tinting.
-- ```borderColor```→ The color of the avatar’s border. Defaults to `MaterialTheme.colorScheme.outlineVariant`.
+- ```shape```→ The shape of the avatar. Defaults to [CircleShape], but can be customized (e.g.,
+  `RoundedCornerShape(8.dp)` for a square look).
+- ```contentScale```→ Defines how the image should scale within its bounds. Common values
+  are [ContentScale.Crop] or [ContentScale.Fit].
+- ```tintColor```→ An optional color tint applied to the avatar image. Pass `null` to disable
+  tinting.
+- ```borderColor```→ The color of the avatar’s border. Defaults to
+  `MaterialTheme.colorScheme.outlineVariant`.
 - ```borderWidth```→ The width of the avatar’s border. Defaults to `2.dp`.
 - ```showBackButton```→ Whether to display the back navigation icon. Defaults to `true`.
-- ```onBackClicked```→ Callback invoked when the back button is pressed. Ignored if [showBackButton] is `false`.
-- ```actions```→ A composable slot for action items (e.g., icons, menus) displayed on the right side of the top bar.
+- ```onBackClicked```→ Callback invoked when the back button is pressed. Ignored if [showBackButton]
+  is `false`.
+- ```actions```→ A composable slot for action items (e.g., icons, menus) displayed on the right side
+  of the top bar.
 - ```expandedBackgroundColor```→ The background color of the app bar when fully expanded.
 - ``` collapsedBackgroundColor``` → The background color of the app bar when fully collapsed.
 - ```statusBarColor```→ The color of the status bar.
@@ -167,8 +177,10 @@ Includes:
 Get Kotlin & Android Jetpack Compose tips on `What's App` **Join My Channel** :
 [📚 Kotlin & Android Learning📚](https://whatsapp.com/channel/0029VbBGTNr90x2umLoWKU3z)
 
-
 ## License
 
+![License](https://img.shields.io/badge/License-Apache%202.0-orange)
+
 This project is licensed under the Apache License 2.0.
-See the full license [here](https://www.apache.org/licenses/LICENSE-2.0).
+
+See the full license [here](LICENSE).
