@@ -71,21 +71,41 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+mavenPublishing {
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("collapsingBar") {
-                from(components["release"])
-                groupId = "io.github.team2681"
-                artifactId = "collapsingBar"
-                version = "1.0.0"
+    coordinates("io.github.team2681", "collapsingbar", "1.0.0")
 
-                signing {
-                    useGpgCmd()
-                    sign(publishing.publications["collapsingBar"])
-                }
+    pom {
+        name.set(project.properties["POM_NAME"] as String?)
+        description.set(project.properties["POM_DESCRIPTION"] as String?)
+        url.set(project.properties["POM_URL"] as String?)
+        licenses {
+            license()
+            {
+                name.set(project.properties["POM_LICENSE_NAME"] as String?)
+                url.set(project.properties["POM_LICENSE_URL"] as String?)
             }
         }
+        developers {
+            developer {
+                id.set(project.properties["POM_DEVELOPER_ID"] as String?)
+                name.set(project.properties["POM_DEVELOPER_NAME"] as String?)
+                email.set(project.properties["POM_DEVELOPER_EMAIL"] as String?)
+                url.set(project.properties["POM_DEVELOPER_URL"] as String?)
+            }
+        }
+        scm {
+            connection.set(project.properties["POM_SCM_URL"] as String?)
+            developerConnection.set(project.properties["POM_SCM_DEV_CONNECTION"] as String?)
+            url.set(project.properties["POM_SCM_CONNECTION"] as String?)
+        }
     }
+}
+signing {
+    useGpgCmd()
+    sign(publishing.publications)
+}
+
+tasks.withType<PublishToMavenRepository>().configureEach {
+    dependsOn(tasks.withType<Sign>())
 }
