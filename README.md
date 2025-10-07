@@ -75,10 +75,10 @@ Includes:
 ## Screenshots
 
 <table> <tr> 
-<td>Loading State</td> 
-<td>Expanded State</td> 
-<td>Collapsed State</td> 
-<td>Expanded & Collapsed Demo</td> 
+<td><b>Loading State</b></td> 
+<td><b>Expanded State</b></td> 
+<td><b>Collapsed State</b></td> 
+<td><b>Expanded & Collapsed</b></td> 
 </tr>
 <tr> 
 <td><img src="screenshots/loading.gif" alt="Loading State" width="202"/></td> 
