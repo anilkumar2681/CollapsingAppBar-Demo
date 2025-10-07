@@ -74,12 +74,13 @@ Includes:
 
 ## Screenshots
 
-<table> <tr> <td><img src="screenshots/loading.gif" alt="Loading State" width="202"/></td> 
+<table> <tr> <td>Loading State</td> <td>Expanded State</td> <td>Collapsed State</td> 
+<td>Expanded & Collapsed Demo</td> </tr>
+<tr> <td><img src="screenshots/loading.gif" alt="Loading State" width="202"/></td> 
 <td><img src="screenshots/expanded.jpeg" alt="Expanded State" width="202"/></td> 
 <td><img src="screenshots/collapsed.jpeg" alt="Collapsed State" width="202"/></td> 
 <td><img src="screenshots/demo.gif" alt="Expanded and Collapsed Demo" width="202"/></td> 
-</tr> <tr> <td>Loading State</td> <td>Expanded State</td> <td>Collapsed State</td> 
-<td>Expanded & Collapsed Demo</td> </tr> </table>
+</tr> </table>
 
 ## Usage
 
