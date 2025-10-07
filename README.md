@@ -74,9 +74,12 @@ Includes:
 
 ## Screenshots
 
-| Loading State                              | Expanded State                                | Collapsed State                                 | Expanded and Collapsed                          |
-|--------------------------------------------|-----------------------------------------------|-------------------------------------------------|-------------------------------------------------|
-| ![Loading_images](screenshots/loading.gif) | ![Expanded AppBar](screenshots/expanded.jpeg) | ![Collapsed AppBar](screenshots/collapsed.jpeg) | ![Collapsing AppBar Demo](screenshots/demo.gif) |
+<table> <tr> <td><img src="screenshots/loading.gif" alt="Loading State" width="202"/></td> 
+<td><img src="screenshots/expanded.jpeg" alt="Expanded State" width="202"/></td> 
+<td><img src="screenshots/collapsed.jpeg" alt="Collapsed State" width="202"/></td> 
+<td><img src="screenshots/demo.gif" alt="Expanded and Collapsed Demo" width="202"/></td> 
+</tr> <tr> <td>Loading State</td> <td>Expanded State</td> <td>Collapsed State</td> 
+<td>Expanded & Collapsed Demo</td> </tr> </table>
 
 ## Usage
 
