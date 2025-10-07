@@ -1,0 +1,13 @@
+# CODEOWNERS for CollapsingAppBarDemo library
+
+# All files in the repo require review from the main maintainer
+* @team2681
+
+# Source code folder requires Android team review
+src/* @android-team
+
+# Documentation folder requires documentation team review
+docs/* @doc-team
+
+# Gradle and build scripts require build team review
+build.gradle settings.gradle gradle/* @build-team
