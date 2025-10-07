@@ -4,10 +4,10 @@
 * @team2681
 
 # Source code folder requires Android team review
-src/* @android-team
+src/* @team2681
 
 # Documentation folder requires documentation team review
-docs/* @doc-team
+docs/* @team2681
 
 # Gradle and build scripts require build team review
-build.gradle settings.gradle gradle/* @build-team
+build.gradle settings.gradle gradle/* @team2681
