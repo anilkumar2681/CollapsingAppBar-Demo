@@ -78,13 +78,11 @@ Includes:
 <th style="text-align:center;">Loading State</th>
 <th style="text-align:center;">Expanded State</th>
 <th style="text-align:center;">Collapsed State</th>
-<th style="text-align:center;">Expanded & Collapsed</th>
 </tr>
 <tr> 
-<td><img src="screenshots/loading.gif" alt="Loading State" width="202"/></td> 
-<td><img src="screenshots/expanded.jpeg" alt="Expanded State" width="202"/></td> 
-<td><img src="screenshots/collapsed.jpeg" alt="Collapsed State" width="202"/></td> 
-<td><img src="screenshots/demo.gif" alt="Expanded and Collapsed Demo" width="202"/></td> 
+<td><img src="screenshots/loading.jpg" alt="Loading State" width="202"/></td> 
+<td><img src="screenshots/expanded.jpg" alt="Expanded State" width="202"/></td> 
+<td><img src="screenshots/collapsed.jpg" alt="Collapsed State" width="202"/></td>  
 </tr> </table>
 
 ## Usage
