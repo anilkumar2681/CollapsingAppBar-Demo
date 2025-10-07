@@ -19,6 +19,7 @@ Includes:
 - [Usage](#usage)
 - [Jetpack Compose Example](#jetpack-compose-example)
 - [WhatsApp Channel](#whatsapp-channel)
+- [License](#License)
 
 ## Key Features
 
@@ -165,3 +166,9 @@ Includes:
 
 Get Kotlin & Android Jetpack Compose tips on `What's App` **Join My Channel** :
 [📚 Kotlin & Android Learning📚](https://whatsapp.com/channel/0029VbBGTNr90x2umLoWKU3z)
+
+
+## License
+
+This project is licensed under the Apache License 2.0.
+See the full license [here](https://www.apache.org/licenses/LICENSE-2.0).
