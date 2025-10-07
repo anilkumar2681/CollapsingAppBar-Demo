@@ -73,7 +73,7 @@ Includes:
 
 ## Screenshots
 
-| Loading State                              | Expanded State                                | Collapsed State                                 | Expanded and Collapsed                          
+| Loading State                              | Expanded State                                | Collapsed State                                 | Expanded and Collapsed                          |
 |--------------------------------------------|-----------------------------------------------|-------------------------------------------------|-------------------------------------------------|
 | ![Loading_images](screenshots/loading.gif) | ![Expanded AppBar](screenshots/expanded.jpeg) | ![Collapsed AppBar](screenshots/collapsed.jpeg) | ![Collapsing AppBar Demo](screenshots/demo.gif) |
 
