@@ -43,7 +43,7 @@ Includes:
 
    ```
    dependencies {
-        implementation("io.github.team2681:collapsingbar:1.0.0")
+        implementation("io.github.team2681:collapsingbar:1.1.0")
     }
    ```    
 
@@ -53,7 +53,7 @@ Includes:
 
    ```
    [versions]
-   collapsingbar = "1.0.0"
+   collapsingbar = "1.1.0"
 
    [libraries]
    collapsingbar = { group = "io.github.team2681", name = "collapsingbar", version.ref = "collapsingbar" }
