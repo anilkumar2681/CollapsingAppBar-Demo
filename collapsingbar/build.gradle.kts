@@ -13,7 +13,6 @@ android {
 
     defaultConfig {
         minSdk = 24
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -73,7 +72,7 @@ dependencies {
 }
 mavenPublishing {
 
-    coordinates("io.github.team2681", "collapsingbar", "1.0.0")
+    coordinates("io.github.team2681", "collapsingbar", "1.1.0")
 
     pom {
         name.set(project.properties["POM_NAME"] as String?)

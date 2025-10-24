@@ -59,7 +59,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import coil.compose.AsyncImage
 import coil.compose.AsyncImagePainter
-import io.team2681.compose.collapsingbar.CollapsingAppBar
+import io.team2681.compose.collapsingbar.optimized.CollapsingAppBar
 
 /**
  * Project: CollapsingAppBarDemo
@@ -112,15 +112,18 @@ fun CollapsingAppBarScreen(modifier: Modifier = Modifier) {
         topBar = {
             CollapsingAppBar(
                 scrollBehavior = scrollBehavior,
-                title = "Anil Kumar",
-                subtitle = "@android developer",
+                title = "Title",
+                subtitle = "@Subtitle",
                 bioText = "Passionate about technology, design, and continuous learning. " +
                         "I love creating mobile apps, exploring new tools. When I’m not coding," +
                         "I enjoy reading, music, and discovering new ideas.",
                 showBackButton = false,
                 imageMinSize = 32.dp,
                 imageMaxSize = 60.dp,
-                tintColor = Color.White,
+                tintColor = Color.Cyan,
+                borderColor = Color.White,
+                contentScale = ContentScale.FillBounds,
+                shape = CircleShape,
                 onBackClicked = {
                     Toast.makeText(context, "Back button clicked!", Toast.LENGTH_SHORT).show()
                 },
@@ -135,7 +138,11 @@ fun CollapsingAppBarScreen(modifier: Modifier = Modifier) {
                             }
                     )
                     {
-                        Icon(Icons.Default.Search, contentDescription = "Search")
+                        Icon(
+                            imageVector = Icons.Default.Search,
+                            contentDescription = "Search",
+                            tint = Color.White
+                        )
                     }
                     IconButton(
                         onClick =
@@ -145,7 +152,11 @@ fun CollapsingAppBarScreen(modifier: Modifier = Modifier) {
                                     .show()
                             })
                     {
-                        Icon(Icons.Default.MoreVert, contentDescription = "More options")
+                        Icon(
+                            Icons.Default.MoreVert,
+                            contentDescription = "More options",
+                            tint = Color.White
+                        )
                     }
                 }
             )
